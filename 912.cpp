@@ -50,9 +50,6 @@ int main() {
 					A[i] = 2;
 				else if(ccin == 'D')
 					A[i] = 3;
-				else{
-					//printf("Fuck %c\n", ccin);
-				}
 			}
 		}
 		bool s = true;
@@ -73,9 +70,6 @@ int main() {
 					B[i] = 2;
 				else if(ccin == 'D')
 					B[i] = 3;
-				else{
-					//printf("Fuck %c\n", ccin);
-				}
 			}
 
 			if(!isSameSet(A[i], B[i])){
