@@ -1,3 +1,10 @@
+/* UVa Problem 483
+ *
+ * Word Scramble
+ *
+ * Author: Bryan Thornbury
+*/
+
 #include "stdio.h"
 #include <stack>
 
