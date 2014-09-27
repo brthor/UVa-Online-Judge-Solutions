@@ -1,0 +1,8 @@
+#Ignore Everything
+*
+
+#Except Source and git files
+!.gitignore
+!*.java
+!*.cpp
+!*.c
