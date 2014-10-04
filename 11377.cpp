@@ -70,7 +70,7 @@ int minNum(int start, int target){
 }
 
 int main() {
-	freopen("input.txt", "r", stdin);
+	//freopen("input.txt", "r", stdin);
 	int T = 0;
 	scanf("%d", &T);
 
@@ -106,4 +106,5 @@ int main() {
 		}
 		printf("\n");
 	}
+	return 0;
 }
