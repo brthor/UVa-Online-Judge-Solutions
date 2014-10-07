@@ -49,7 +49,7 @@ ii points[500 + 5];
 double maxEdge(int size, int connectedComponents){
 	initSet(size);
 
-	int cConnected = 0;
+	int cConnected = size;
 	int max = 0;
 	int cost(0.0);
 	int dx(0), dy(0);
@@ -72,14 +72,13 @@ double maxEdge(int size, int connectedComponents){
 	int source;
 	int target;
 	//perform kruskal's keep track of max added edge
-	while(!q.empty() && cConnected < connectedComponents){
+	while(!q.empty() && cConnected > connectedComponents){
 		c = q.top(); q.pop();
 		source = c.second.first;
 		target = c.second.second;
 
 		if(!isSameSet(source, target)){
-			if(findSet(source) == source && findSet(target) == target) cConnected ++;
-			else if(findSet(source) != findSet(target) && findSet(target) != target && findSet(source) != source) cConnected --;
+			cConnected--;
 			unionSet(source,target);
 			max = c.first;
 		}
@@ -99,7 +98,7 @@ double maxEdge(int size, int connectedComponents){
 }
 
 int main(){
-	freopen("input.txt", "r", stdin);
+	//freopen("input.txt", "r", stdin);
 
 	int T(0), S(0), P(0), x(0), y(0);
 
