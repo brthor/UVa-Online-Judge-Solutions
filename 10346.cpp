@@ -11,18 +11,18 @@
 using namespace std;
 
 int main(){
-	freopen("input.txt", "r", stdin);
-	long int n(0),k(0);
-	while(scanf("%ld %ld", &n, &k) == 2){
-		long int cigs = n;
-		long int ncigs = 0;
-		long int butts = n;
-		while(butts > k){
+	//freopen("input.txt", "r", stdin);
+	long long n(0),k(0);
+	while(scanf("%lld %lld", &n, &k) == 2){
+		long long cigs = n;
+		long long ncigs = 0;
+		long long butts = n;
+		while(butts >= k){
 			ncigs = butts / k;
 			butts = butts % k + ncigs;
 			cigs += ncigs;
 		}
-		printf("%ld\n", cigs);
+		printf("%lld\n", cigs);
 	}
 	return 0;
 }
