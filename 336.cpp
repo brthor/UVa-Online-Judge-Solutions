@@ -1,4 +1,4 @@
-w/* UVa Problem 336
+/* UVa Problem 336
  * A Node Too Far
 */
 
